@@ -1,26 +1,26 @@
-# def run_guessing_game
-#   puts "Guess a number between 1 and 6."
-#   random_number = rand(1..6)
-#   user_guess = gets.chomp.strip
-#   if user_guess == "exit"
-#     puts "Goodbye!"
-#   elsif random_number == user_guess;
-#     puts "You guessed the correct number!"
-#   elsif random_number != user_guess
-#     puts "Sorry! The computer guessed #{number}"
-#   end
-# end
-
 def run_guessing_game
   puts "Guess a number between 1 and 6."
-  random_number = rand(6) + 1
+  random_number = rand(1..6)
   input = gets.chomp.strip
-  
   if input == "exit"
     puts "Goodbye!"
-  elsif input.to_i == random_number
+  elsif input == random_number;
     puts "You guessed the correct number!"
-  elsif input.to_i != random_number
-    puts "Sorry! The computer guessed #{random_number}."
+  elsif input != random_number
+    puts "Sorry! The computer guessed #{number}"
   end
 end
+
+# def run_guessing_game
+#   puts "Guess a number between 1 and 6."
+#   random_number = rand(6) + 1
+#   input = gets.chomp.strip
+  
+#   if input == "exit"
+#     puts "Goodbye!"
+#   elsif input.to_i == random_number
+#     puts "You guessed the correct number!"
+#   elsif input.to_i != random_number
+#     puts "Sorry! The computer guessed #{random_number}."
+#   end
+# end
