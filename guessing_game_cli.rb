@@ -3,5 +3,6 @@ def run_guessing_game
   user_guess = gets.chomp
   if number == user_guess
     
-  elsif 
+  elsif number !== user_guess
+    puts "Sorry! The computer guessed #{number}" 
 end
